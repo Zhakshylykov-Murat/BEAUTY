@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,300;1,400;1,700&display=swap');
+
+body{
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 14px;
+}
+/* header */
+.wrapper{
+    max-width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    list-style-type: none;   /*чтобы убрать точки*/
+    justify-content: center;
+    padding-left: 0;
+}
+.nav > li{  /*чтобы обращатся*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: #333333;
+}
+.header{
+    background-color: white;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo{
+    color: #66c05d;
+    font-size: 36px;
+    font-weight: 700;
+}
+.header-info span{
+    font-size: 16px;
+}
+.header-info button{
+    font-size: 14px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #66c05d;
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+.header-info button:hover{
+    background-color: #66c05d;
+    transition: 0.9 ease;
+}
+.header-bottom .nav{
+    font-size: 16px;
+    margin: 0;
+}
+.header-bottom{
+    padding: 15px 0;
+    margin: 0;
+}
+hr{
+    border: none;
+    background-color: 1px solid #efefef;
+    height: 5px;
+}
+/* Sectiion baner */
+.banner{
+    background-image: url("../img/Rectangle\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: rgb(255, 255, 255);
+}
+.title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.banner p{
+    margin-bottom: 50px;
+    font-weight: 400;
+    max-width: 315px;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 10px 15px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: gray;
+}
+/* Section card*/
+.card{
+    margin: 147px 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    text-align: center;
+}
+.text{
+    position: absolute;
+    left: 100px;
+    top: 650px;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+.product{
+    padding: 25px;
+    padding-left: 30px;
+    background: #FFFFFF;
+    width: 170px;
+}
+.product_img{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 166px;
+    height: 125px;
+}
+.img-item .img-img{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.product-price .product-price__current{
+    font-weight: 500;
+    font-size: 21px;
+}
+.product_btn{
+    color: #fff;
+    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: #66C05D;
+    padding: 9px 39px;
+}
+.product_btn:hover{
+    background-color: #00ff95;
+}
+/* Seccion green blocks */
+.green-bloks{
+    display: flex;
+    padding: 100px ;
+}
+.green-bloks .right-green-block,
+.green-bloks .left-green-block{
+    background: #66C05D;
+    width: 540px;
+    height: 132px;
+    /* Top right bottom left !*/
+    padding: 15px 0 50px 40px; 
+    color: #FFFFFF;
+}
+.green-bloks .left-green-block{
+    margin-right: 20px;
+    display: flex;
+}
+.green-bloks h2{
+    font-size: 18px;
+}
+.green-bloks p{
+    font-size: 14px;
+    line-height: 21px;
+}
+.svg-message{
+    padding: 30px 0 0 65px;
+}
+.green-bloks button{
+    background: #66C05D;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    color: white;
+    padding: 9px 29px 9px 25px;
+}
+.left-green-block button{
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FFFFFF;
+    color: grey;
+    padding: 9px 125px 9px 25px;
+}
+/* footer */
+.footer{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.footer-info button{
+    font-size: 14px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #66c05d;
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+.footer-info button:hover{
+    background-color: #66c05d;
+}
+/* .footer-bottom */
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+    padding: 5px 0;
+}
+.footer-bottom .footer-more a{
+    color: gray;
+    text-decoration: none;
+}
